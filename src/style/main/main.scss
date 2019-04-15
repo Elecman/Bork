@@ -28,10 +28,11 @@
   margin-left: -315px;
   margin-top: -220px;
   border-radius: 4px;
+  box-shadow: 2px 0 32px rgba(0, 0, 0, 0.5);
 
   @media (min-width: 320px) and (max-width: 475px) {
     width: 300px;
-    margin-left: -150px;
+    margin-left: -149px;
   }
 
   //@media (orientation: landscape) {
@@ -118,9 +119,14 @@
       color: #fff;
       letter-spacing: 1px;
 
-      //@media (orientation: landscape) {
-      //  padding: 10px 49px;
-      //}
+      &:hover,
+      &:active {
+        background: #C0392B;
+      }
+
+      &:disabled {
+        background: transparent;
+      }
     }
 
     &--input {
@@ -196,10 +202,6 @@
           left: 18px;
         }
       }
-    }
-
-    input[type="submit"]:hover {
-      background: #C0392B;
     }
 
     span a {
