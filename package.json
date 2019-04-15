@@ -1,0 +1,32 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.0",
+    "imagemin-pngquant": "^5.1.0",
+    "imask": "^4.1.5",
+    "npm": "^6.1.0",
+    "rimraf": "^2.6.2"
+  },
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "jquery": "^3.3.1",
+    "webpack": "^4.25.1",
+    "webpack-stream": "^5.1.1"
+  }
+}

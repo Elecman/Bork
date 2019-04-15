@@ -1,0 +1,228 @@
+@import "fonts";
+
+.main-wrapper {
+  position: relative;
+  z-index: 10;
+  background: #fefefe url("../img/purple_sunset-wallpaper-2880x1800.png") no-repeat center center fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.login-form {
+  width: 630px;
+  height: 435px;
+  background: inherit;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin-left: -315px;
+  margin-top: -220px;
+  border-radius: 4px;
+
+  @media (min-width: 320px) and (max-width: 475px) {
+    width: 300px;
+    margin-left: -150px;
+  }
+
+  //@media (orientation: landscape) {
+  //  height: unset;
+  //  margin-top: -180px;
+  //}
+
+  &:before {
+    width: 680px;
+    height: 440px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    bottom: 0;
+    right: 0;
+    background: inherit;
+    box-shadow: inset 0 0 0 275px rgba(255, 255, 255, 0.2);
+    filter: blur(10px);
+  }
+
+  &__wrapper {
+    text-align: center;
+    width: 367px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 21px;
+
+    @media (min-width: 320px) and (max-width: 475px) {
+      width: 290px;
+    }
+
+    //@media (orientation: landscape) {
+    //  padding-top: 0;
+    //}
+
+    &--img {
+      margin-bottom: 15px;
+    }
+
+    &--row {
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+
+      &:before {
+        clear: both;
+      }
+    }
+
+    &--link {
+      padding: 5px 24px;
+
+      @media (min-width: 320px) and (max-width: 475px) {
+        font-size: 14px;
+      }
+
+      //@media (orientation: landscape) {
+      //  font-size: 14px;
+      //}
+    }
+
+    &--ok {
+      background: url("../img/ok.png") no-repeat 95% 13px;
+    }
+
+    &--err {
+      background: url("../img/err.png") no-repeat 95% 8px;
+
+      input {
+        color: #b40000;
+
+      }
+    }
+
+    &--button {
+      margin: 0 auto;
+      padding: 16px 49px;
+      background: transparent;
+      outline: unset;
+      border: 1px solid #fff;
+      border-radius: 27px;
+      font-size: 16px;
+      color: #fff;
+      letter-spacing: 1px;
+
+      //@media (orientation: landscape) {
+      //  padding: 10px 49px;
+      //}
+    }
+
+    &--input {
+      position: relative;
+      padding: 0;
+      width: 100%;
+      font-size: 18px;
+      border: 1px solid #ffffff;
+      line-height: 47px;
+      border-radius: 27px;
+      text-align: center;
+      background-color: transparent;
+      transition: all 0.4s ease;
+
+      //@media (min-width: 320px) and (orientation: landscape) {
+      //  line-height: 35px;
+      //}
+
+      &:hover,
+      &:active {
+        background-color: #ffffff;
+        border: 1px solid transparent;
+      }
+
+      &::placeholder {
+        color: #d3d3d3;
+      }
+
+    }
+
+    &--check {
+      width: 43px;
+      height: 23px;
+      float: left;
+      border: 1px solid #fff;
+      margin: 2px 18px;
+      display: inline-block;
+      position: relative;
+      border-radius: 50px;
+
+      span {
+        margin-left: 50px;
+        color: #fff;
+        vertical-align: text-top;
+        letter-spacing: 0.5px;
+
+        @media (min-width: 320px) and (max-width: 475px) {
+          font-size: 14px;
+        }
+
+        //@media (orientation: landscape) {
+        //  font-size: 14px;
+        //}
+      }
+
+      label {
+        display: block;
+        width: 22px;
+        height: 16px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        cursor: pointer;
+        background: #fcfff4;
+        border-radius: 50px;
+        transition: all 0.4s ease;
+      }
+
+      input[type=checkbox] {
+        visibility: hidden;
+
+        &:checked + label {
+          left: 18px;
+        }
+      }
+    }
+
+    input[type="submit"]:hover {
+      background: #C0392B;
+    }
+
+    span a {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.breadcrumb {
+  position: relative;
+  top: 23px;
+  left: 55px;
+  letter-spacing: 1.2px;
+  display: inline-block;
+  font-family: 'HelveticaNeueCyr Thin', sans-serif;
+  font-size: 10px;
+
+  //@media (orientation: landscape) {
+  //  top: 40px;
+  //}
+
+  span {
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
